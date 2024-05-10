@@ -73,6 +73,8 @@
 
 ## Dashboard and Admin Template
 
+블로그 : [SvelteKit Tailwind 튜토리얼 - 6일차](https://taejoone.jeju.onl/posts/2024-04-21-sveltekit-tailwindcss-day6/)
+
 > top 화면
 
 <img src="https://taejoone.jeju.onl/assets/img/2024/04/21-tailgrids-templates-site3-top.png" alt="TailGrids - Dashboard and Admin Template" width="80%" />
@@ -80,6 +82,11 @@
 > 전체 화면
 
 <img src="https://taejoone.jeju.onl/assets/img/2024/04/21-site3-full-screen-shot.png" alt="TailGrids - Dashboard and Admin Template" width="200px" />
+
+> chartjs with actions
+
+<img src="https://taejoone.jeju.onl/assets/img/2024/04/21-svelte5-chartjs-line-actions.gif" alt="chartjs-line-with-actions" width="80%" />
+
 
 > Template Section and Pages
 
