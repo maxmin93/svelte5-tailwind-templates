@@ -1,0 +1,91 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
+/** @type {import('tailwindcss').Config} */
+export default {
+	content: ['./src/**/*.{html,js,svelte,ts}'],
+	theme: {
+		extend: {
+			/*
+			colors: {
+				dark: '#090E34',
+				'dark-700': '#090e34b3',
+				'dark-1': '#000000',
+				'dark-2': '#121417',
+				'dark-3': '#101012',
+				'dark-4': '#1F1F22',
+				'dark-6': '#222427',
+				'light-1': '#FFFFFF',
+				'light-2': '#EFEFEF',
+				'light-3': '#7878A3',
+				'light-4': '#5C5C7B',
+				gray: '#F9FAFB',
+				'gray-1': '#F4F7FF',
+				'gray-2': '#F8FAFC',
+				primary: '#3056D3',
+				secondary: '#13C296',
+				'body-color': '#637381',
+				warning: '#F9C107',
+				danger: '#DC3545',
+				success: '#3CA745',
+				info: '#3BA2B8',
+				light: '#efefef',
+				'form-stroke': '#E0E0E0',
+				'tg-bg': '#f7f8fa',
+				black: '#212B36',
+				stroke: '#E7E7E7',
+				orange: '#F2994A',
+				purple: '#9B51E0',
+			},
+			*/
+			boxShadow: {
+				two: '0px 1px 4px rgba(0, 0, 0, 0.12)',
+				three: '0px 1px 5px rgba(0, 0, 0, 0.14)',
+				four: '0px 4px 10px rgba(0, 0, 0, 0.12)',
+				'chat-box': '0px 1px 8px rgba(0, 0, 0, 0.1)',
+				'profile-5': '0px 1px 3px rgba(0, 0, 0, 0.08)',
+				input: '0px 7px 20px rgba(0, 0, 0, 0.03)',
+				pricing: '0px 39px 23px -27px rgba(0, 0, 0, 0.04)',
+				'switch-1': '0px 0px 5px rgba(0, 0, 0, 0.15)',
+				'testimonial-4': '0px 60px 120px -20px #EBEFFD',
+				'testimonial-5': '0px 10px 39px rgba(92, 115, 160, 0.08)',
+				'contact-3': '0px 4px 28px rgba(0, 0, 0, 0.08)',
+				'contact-6': '0px 2px 4px rgba(0, 0, 0, 0.05)',
+				card: '0px 1px 3px rgba(0, 0, 0, 0.12)',
+				'card-2': '0px 1px 10px -2px rgba(0, 0, 0, 0.15)',
+			},
+			dropShadow: {
+				tooltip: '0px 0px 2px rgba(0, 0, 0, 0.14)',
+				three: '0px 1px 5px rgba(0, 0, 0, 0.14)',
+				four: '0px 4px 10px rgba(0, 0, 0, 0.12)',
+				'avatar-5': '0px 1px 2px rgba(0, 0, 0, 0.08)',
+			},
+		},
+		container: (theme) => ({
+			center: true,
+			padding: {
+				DEFAULT: theme('spacing.4'),
+				sm: theme('spacing.5'),
+				lg: theme('spacing.6'),
+				xl: theme('spacing.8'),
+			},
+		}),
+		screens: {
+			xs: '400px',
+			sm: '540px',
+			md: '720px',
+			lg: '960px',
+			xl: '1140px',
+			'2xl': '1320px',
+		},
+		fontFamily: {
+			sans: ['"Noto Sans KR"', ...defaultTheme.fontFamily.sans],
+			serif: ['"Noto Serif KR"', ...defaultTheme.fontFamily.serif],
+			mono: ['D2Coding', ...defaultTheme.fontFamily.mono],
+		},
+	},
+	plugins: [require('@tailwindcss/typography'), require('daisyui')],
+	daisyui: {
+		logs: false,
+		themes: false,
+	},
+};
